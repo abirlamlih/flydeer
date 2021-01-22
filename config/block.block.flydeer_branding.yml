@@ -1,0 +1,25 @@
+uuid: bc7e2666-125c-4a91-8a36-59e41d4ced39
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - flydeer
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: flydeer_branding
+theme: flydeer
+region: navigation
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

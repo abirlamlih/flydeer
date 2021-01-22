@@ -1,0 +1,20 @@
+uuid: b89488d7-f27d-4f46-99d2-98a73f0116e6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - flydeer
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: flydeer_local_actions
+theme: flydeer
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: bb842b18-0ee8-4ed0-930a-bfa4321530a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - flydeer
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: flydeer_content
+theme: flydeer
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: ggggggggggggggg
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: f118f5c1-2e4a-4f1a-b244-3045e53c557b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.timesheet
+id: node.timesheet.promote
+field_name: promote
+entity_type: node
+bundle: timesheet
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

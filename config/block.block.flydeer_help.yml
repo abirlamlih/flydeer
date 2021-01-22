@@ -1,0 +1,22 @@
+uuid: c422deaf-c6d8-4ec4-adf6-c2253c06d387
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - flydeer
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: flydeer_help
+theme: flydeer
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

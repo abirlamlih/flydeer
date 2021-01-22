@@ -1,0 +1,29 @@
+uuid: fbddf900-f016-4382-b147-b08e0730241c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project
+    - node.type.timesheet
+    - taxonomy.vocabulary.project
+id: node.timesheet.field_project
+field_name: field_project
+entity_type: node
+bundle: timesheet
+label: Project
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

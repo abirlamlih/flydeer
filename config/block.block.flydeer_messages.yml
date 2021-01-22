@@ -1,0 +1,22 @@
+uuid: 4a9e7a61-7679-4b26-8fe0-a28de495243f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - flydeer
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: flydeer_messages
+theme: flydeer
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

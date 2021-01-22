@@ -1,0 +1,24 @@
+uuid: 720701a8-944f-4a66-81b0-9692143cc24d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.timesheet.field_duration
+    - field.field.node.timesheet.field_project
+    - node.type.timesheet
+  module:
+    - user
+id: node.timesheet.teaser
+targetEntityType: node
+bundle: timesheet
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_duration: true
+  field_project: true
