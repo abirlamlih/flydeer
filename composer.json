@@ -13,16 +13,17 @@
         "php": ">=7.0.8",
         "composer/installers": "^1.0.20",
         "cweagans/composer-patches": "^1.0",
-        "drupal/core-composer-scaffold": "^8.8.1",
+        "drupal/bootstrap": "^3.23",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
+        "drupal/core-composer-scaffold": "^8.8.1",
+        "drupal/core-recommended": "^8.8",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
+        "pantheon-systems/drupal-integrations": "^8",
         "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",
-        "drupal/core-recommended": "^8.8",
-        "pantheon-systems/drupal-integrations": "^8",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
@@ -103,7 +104,8 @@
                 "web-root": "./web"
             },
             "file-mapping": {
-                "[project-root]/.editorconfig": false
+                "[project-root]/.editorconfig": false,
+                "[web-root]/sites/development.services.yml": false
             }            
         }
     },
