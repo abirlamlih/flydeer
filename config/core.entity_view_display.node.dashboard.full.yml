@@ -1,0 +1,29 @@
+uuid: fce4c593-99f2-4057-92a0-e54b19f04dbc
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.dashboard.field_block
+    - field.field.node.dashboard.field_graph
+    - node.type.dashboard
+  module:
+    - user
+    - viewsreference
+id: node.dashboard.full
+targetEntityType: node
+bundle: dashboard
+mode: full
+content:
+  field_block:
+    type: viewsreference_formatter
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+hidden:
+  field_graph: true
+  links: true

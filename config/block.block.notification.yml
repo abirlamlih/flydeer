@@ -1,0 +1,25 @@
+uuid: 7ddb3185-be2d-4406-9ec0-e0f85e3e47ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.notification
+  module:
+    - system
+  theme:
+    - flydeer
+id: notification
+theme: flydeer
+region: navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:notification'
+settings:
+  id: 'system_menu_block:notification'
+  label: notification
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

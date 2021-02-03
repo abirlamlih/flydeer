@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.timesheet.field_dashboard
     - field.field.node.timesheet.field_duration
     - field.field.node.timesheet.field_project
     - node.type.timesheet
@@ -20,5 +21,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_dashboard: true
   field_duration: true
   field_project: true

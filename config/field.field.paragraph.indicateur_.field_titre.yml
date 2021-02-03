@@ -1,0 +1,19 @@
+uuid: f14a091f-9d3d-412e-85df-585a7ad9236b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titre
+    - paragraphs.paragraphs_type.indicateur_
+id: paragraph.indicateur_.field_titre
+field_name: field_titre
+entity_type: paragraph
+bundle: indicateur_
+label: Titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

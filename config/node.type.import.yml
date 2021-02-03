@@ -1,0 +1,18 @@
+uuid: 8af9b5df-86a7-4dd1-9aac-10b14e7d5948
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Import
+type: import
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,5 +1,11 @@
 framework:
   css:
+    component:
+      css/component/header.css: {}
+      css/component/navbar.css: {}
+      css/component/footer.css: {}
+      css/component/table.css: {}
+      css/component/pagination.css: {}
     theme:
       css/style.css: {}
   js:

@@ -9,11 +9,6 @@ favicon:
   path: ''
   url: 'http://flydeer.ddev.site/themes/custom/flydeer/favicon.ico'
   use_default: true
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 logo:
   path: themes/custom/flydeer/logo.png
   url: ''
@@ -26,3 +21,20 @@ cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
 reset_http_request_cache: ''
 table: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+table_striped: 0
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  menu_main: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''

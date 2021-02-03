@@ -1,0 +1,47 @@
+uuid: 25cf2220-a787-4a94-a71f-f19c69211ca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_graph
+    - node.type.dashboard
+  module:
+    - viewsreference
+id: node.dashboard.field_graph
+field_name: field_graph
+entity_type: node
+bundle: dashboard
+label: Graph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+  preselect_views:
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    countries_population: 0
+    dashboard: 0
+    files: 0
+    frontpage: 0
+    indicateurs: 0
+    project: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

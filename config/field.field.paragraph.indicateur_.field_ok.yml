@@ -1,0 +1,21 @@
+uuid: 20eac39c-4b8e-4758-928a-df805f7a2fd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ok
+    - paragraphs.paragraphs_type.indicateur_
+id: paragraph.indicateur_.field_ok
+field_name: field_ok
+entity_type: paragraph
+bundle: indicateur_
+label: ok
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings: {  }
+field_type: entity_reference

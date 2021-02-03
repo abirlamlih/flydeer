@@ -1,0 +1,8 @@
+uuid: 84ca32c3-13ba-432c-b8a2-56cb5e02cc25
+langcode: en
+status: true
+dependencies: {  }
+id: notification
+label: notification
+description: ''
+locked: false

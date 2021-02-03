@@ -1,0 +1,31 @@
+uuid: b930420d-68ce-4217-b3e5-082ea3addf1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_dashboard
+    - field.storage.block_content.field_indicateur
+    - paragraphs.paragraphs_type.indicateur_
+  module:
+    - entity_reference_revisions
+id: block_content.header_dashboard.field_indicateur
+field_name: field_indicateur
+entity_type: block_content
+bundle: header_dashboard
+label: indicateur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      indicateur_: indicateur_
+    target_bundles_drag_drop:
+      indicateur_:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

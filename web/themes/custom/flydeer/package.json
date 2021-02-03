@@ -7,6 +7,10 @@
     "sass": "sass --watch --style expanded --source-map --embed-sources --no-error-css scss/:css/"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
 }
-   

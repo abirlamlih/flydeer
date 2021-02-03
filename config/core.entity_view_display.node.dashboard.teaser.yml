@@ -1,0 +1,24 @@
+uuid: 7726aa4a-a17e-47d9-8835-a1418aa9493b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dashboard.field_block
+    - field.field.node.dashboard.field_graph
+    - node.type.dashboard
+  module:
+    - user
+id: node.dashboard.teaser
+targetEntityType: node
+bundle: dashboard
+mode: teaser
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_block: true
+  field_graph: true

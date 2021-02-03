@@ -1,0 +1,78 @@
+.navbar-nav li a {
+  color: #596d73;
+}
+.navbar-nav li a:hover, .navbar-nav li a:focus {
+  background-color: #f69;
+  color: white;
+}
+
+.container {
+  width: 1400px;
+}
+
+#navbar {
+  border: 5px solid #e4f3f8;
+  padding-top: 40px;
+  width: 100%;
+  position: sticky;
+}
+
+.navbar-default {
+  background-color: #e4f3f8 !important;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: #e4f3f8;
+  display: flex !important;
+  justify-content: center;
+}
+
+.navbar.container {
+  max-width: 100% !important;
+}
+
+.form-item.js-form-item.form-type-search.js-form-type-search.form-item-keys.js-form-item-keys.form-no-label.form-group {
+  display: flex !important;
+  justify-content: center;
+  position: absolute;
+  right: 1000px;
+}
+
+.button.js-form-submit.form-submit.btn-primary.btn.icon-only {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #62B6CB;
+}
+
+.logo.navbar-btn.pull-left {
+  position: absolute;
+  right: 1160px;
+  bottom: 20px;
+}
+
+.notification {
+  background-image: url("https://img.icons8.com/ultraviolet/40/4a90e2/appointment-reminders.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  width: 28px !important;
+  height: 28px !important;
+  position: absolute;
+  left: 1200px;
+  bottom: 10px;
+  margin-top: -40px;
+}
+
+.navbar-default .navbar-nav li a {
+  color: white !important;
+  background-color: #f69;
+  border-radius: 30px;
+  right: 210px;
+  bottom: 23px;
+}
+
+.headroom {
+  position: fixed;
+}
+
+/*# sourceMappingURL=navbar.css.map */
