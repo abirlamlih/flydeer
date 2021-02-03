@@ -1,0 +1,32 @@
+uuid: b253d17f-dadd-41cb-ae45-4486c9b95518
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.header_dashboard
+    - field.storage.paragraph.field_graph
+    - paragraphs.paragraphs_type.columns
+  module:
+    - entity_reference_revisions
+id: paragraph.columns.field_graph
+field_name: field_graph
+entity_type: paragraph
+bundle: columns
+label: Graph
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      basic: basic
+      header_dashboard: header_dashboard
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: basic
+field_type: entity_reference_revisions

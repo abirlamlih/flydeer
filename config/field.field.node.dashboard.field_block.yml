@@ -1,0 +1,26 @@
+uuid: 53075de6-5260-458c-9568-baf2fb025851
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block
+    - node.type.dashboard
+  module:
+    - viewsreference
+id: node.dashboard.field_block
+field_name: field_block
+entity_type: node
+bundle: dashboard
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_types:
+    block: block
+  preselect_views: {  }
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewsreference

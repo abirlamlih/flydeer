@@ -1,0 +1,10 @@
+uuid: e6847bf1-7ff6-4bb1-8d84-06b60f1a265a
+langcode: en
+status: true
+dependencies: {  }
+id: indicateur_
+label: 'indicateur '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

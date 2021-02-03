@@ -1,0 +1,24 @@
+uuid: b250f5a6-3002-40f1-8a2b-2bfe6c928503
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_dashboard
+    - field.field.block_content.header_dashboard.field_indicateur
+  module:
+    - entity_reference_revisions
+id: block_content.header_dashboard.default
+targetEntityType: block_content
+bundle: header_dashboard
+mode: default
+content:
+  field_indicateur:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

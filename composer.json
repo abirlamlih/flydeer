@@ -7,20 +7,45 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "google/charts",
+                "version": "45",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "google_charts"
+                },
+                "dist": {
+                    "url": "https://www.gstatic.com/charts/loader.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
         }
     ],
     "require": {
         "php": ">=7.0.8",
-        "composer/installers": "^1.0.20",
+        "composer/installers": "^1.10",
         "cweagans/composer-patches": "^1.0",
+        "drupal/admin_toolbar": "^3.0",
         "drupal/bootstrap": "^3.23",
+        "drupal/bootstrap_paragraphs": "^2.0@beta",
+        "drupal/charts": "^3.2",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
         "drupal/core-composer-scaffold": "^8.8.1",
         "drupal/core-recommended": "^8.8",
+        "drupal/date_popup": "^1.1",
+        "drupal/link_attributes": "^1.11",
+        "drupal/paragraphs": "^1.12",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
+        "google/charts": "45",
         "pantheon-systems/drupal-integrations": "^8",
         "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",

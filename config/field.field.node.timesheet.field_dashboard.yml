@@ -1,0 +1,21 @@
+uuid: ea73fbbb-ce9b-4238-bef0-cd04b48fc87b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dashboard
+    - node.type.timesheet
+id: node.timesheet.field_dashboard
+field_name: field_dashboard
+entity_type: node
+bundle: timesheet
+label: dashboard
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_format'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,36 @@
+uuid: 11334402-929f-432a-aea5-feed7b50a257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dashboard.field_block
+    - field.field.node.dashboard.field_graph
+    - node.type.dashboard
+  module:
+    - user
+    - viewsreference
+id: node.dashboard.default
+targetEntityType: node
+bundle: dashboard
+mode: default
+content:
+  field_block:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_graph:
+    weight: 1
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden:
+  links: true

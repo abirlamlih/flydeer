@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.timesheet.field_dashboard
     - field.field.node.timesheet.field_duration
     - field.field.node.timesheet.field_project
     - node.type.timesheet
@@ -19,6 +20,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_dashboard:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_duration:
     weight: 122
     settings:
