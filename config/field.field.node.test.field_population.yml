@@ -1,0 +1,23 @@
+uuid: 059628e0-c629-4ea1-b0c6-295f14c65702
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_population
+    - node.type.test
+id: node.test.field_population
+field_name: field_population
+entity_type: node
+bundle: test
+label: Population
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

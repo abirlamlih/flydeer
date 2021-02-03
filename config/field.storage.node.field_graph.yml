@@ -1,0 +1,21 @@
+uuid: 7b016ef9-7ba4-4cfe-89d1-b22872f61ea4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - views
+    - viewsreference
+id: node.field_graph
+field_name: field_graph
+entity_type: node
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: 8f7c4e66-1e54-459c-99c5-1c8d0ed7a24a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Dashboard
+type: dashboard
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

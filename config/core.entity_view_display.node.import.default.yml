@@ -1,0 +1,28 @@
+uuid: fa931211-abd6-4d07-b26c-028ab052e627
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.import.body
+    - node.type.import
+  module:
+    - text
+    - user
+id: node.import.default
+targetEntityType: node
+bundle: import
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

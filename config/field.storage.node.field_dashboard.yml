@@ -1,0 +1,20 @@
+uuid: b43d5ada-6849-4db0-ad62-b52a5570405b
+langcode: en
+status: true
+dependencies:
+  module:
+    - filter
+    - node
+id: node.field_dashboard
+field_name: field_dashboard
+entity_type: node
+type: entity_reference
+settings:
+  target_type: filter_format
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

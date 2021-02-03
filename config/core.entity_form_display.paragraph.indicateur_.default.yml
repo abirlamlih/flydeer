@@ -1,0 +1,54 @@
+uuid: d9f7cb4a-877f-4e38-8e1c-281c9e7b8372
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.indicateur_.field_chiffre_cle
+    - field.field.paragraph.indicateur_.field_icon
+    - field.field.paragraph.indicateur_.field_ok
+    - field.field.paragraph.indicateur_.field_titre
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.indicateur_
+  module:
+    - image
+id: paragraph.indicateur_.default
+targetEntityType: paragraph
+bundle: indicateur_
+mode: default
+content:
+  field_chiffre_cle:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_icon:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_ok:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_titre:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

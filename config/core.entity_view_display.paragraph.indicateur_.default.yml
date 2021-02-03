@@ -1,0 +1,54 @@
+uuid: b2d0236d-d85f-4fb2-ad18-1f4202f487dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.indicateur_.field_chiffre_cle
+    - field.field.paragraph.indicateur_.field_icon
+    - field.field.paragraph.indicateur_.field_ok
+    - field.field.paragraph.indicateur_.field_titre
+    - paragraphs.paragraphs_type.indicateur_
+  module:
+    - image
+id: paragraph.indicateur_.default
+targetEntityType: paragraph
+bundle: indicateur_
+mode: default
+content:
+  field_chiffre_cle:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_icon:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ok:
+    weight: 3
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_titre:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

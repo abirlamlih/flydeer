@@ -1,0 +1,25 @@
+uuid: 4e719146-f1a7-4f41-bfa0-ae7a5ccd9d8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chiffre_cle
+    - paragraphs.paragraphs_type.indicateur_
+id: paragraph.indicateur_.field_chiffre_cle
+field_name: field_chiffre_cle
+entity_type: paragraph
+bundle: indicateur_
+label: 'Chiffre clé'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

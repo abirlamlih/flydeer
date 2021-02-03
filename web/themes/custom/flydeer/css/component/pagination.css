@@ -1,0 +1,22 @@
+.pagination .active a {
+  background-color: #f69 !important;
+  color: white !important;
+  border-color: #f69 !important;
+}
+.pagination .active a:hover, .pagination .active a:focus {
+  background-color: white !important;
+  color: #52575C !important;
+}
+.pagination .active a span:hover, .pagination .active a span:focus {
+  background-color: #62B6CB !important;
+  color: #52575C !important;
+}
+.pagination li a, .pagination li span {
+  color: #52575C !important;
+}
+
+.text-center {
+  text-align: left !important;
+}
+
+/*# sourceMappingURL=pagination.css.map */
