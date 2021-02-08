@@ -1,6 +1,9 @@
 /**
  * Table
  */
+.table-responsive {
+  box-shadow: 20px 20px 10px #E8E8E8;
+}
 .table-responsive thead {
   background: #e4f3f8;
   color: #25282B;
@@ -25,7 +28,6 @@
 }
 
 #edit-submit-frontpage {
-  margin-top: 30px;
   background-color: #f69 !important;
   color: white !important;
   border-color: #f69 !important;
@@ -43,6 +45,39 @@
   height: 100px;
   border: 1px solid #9fa2a3;
   border-radius: 25px;
+}
+
+.form--inline.form-inline.clearfix {
+  margin-right: 4px;
+}
+
+input[type=date].form-control, input[type=time].form-control, input[type=datetime-local].form-control, input[type=month].form-control {
+  line-height: 18px !important;
+}
+
+.btn-info {
+  margin-left: 30px;
+}
+
+.form-group {
+  padding-right: 8px;
+}
+
+.links.btn-group.dropdown a {
+  margin-right: 10px;
+}
+
+.links.btn-group.dropdown ul {
+  display: inline-flex;
+}
+
+li {
+  list-style: none;
+}
+
+.table-responsive .img-responsive {
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=table.css.map */

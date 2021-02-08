@@ -19,4 +19,8 @@
   text-align: left !important;
 }
 
+.pagination a {
+  margin-right: 4px;
+}
+
 /*# sourceMappingURL=pagination.css.map */

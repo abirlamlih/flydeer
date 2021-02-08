@@ -1,88 +1,102 @@
-   
-    .navbar-nav {
-        li {
-            a{
-                color: #596d73;
-                &:hover,&:focus{
-                   background-color: #f69;
-                   color: white;
-                }
-            }
-            
-    } 
- 
-}
-.container {
-    width: 1400px;
-}
-#navbar  {
-    border: 5px solid #e4f3f8;
-    padding-top: 40px;
-    width: 100%;
-    position: sticky;
-
-}
-.navbar-default {
-    background-color: #e4f3f8 !important;
-    border-color: transparent;
-
-}
-// e4f3f8
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    background-color: #e4f3f8;
-    display: flex !important;
-    justify-content: center;
-}
-.navbar.container {
-    max-width: 100% !important;
+// navbar
+.navbar-nav {
+  li {
+    a {
+      color: #596d73;
+      &:hover,
+      &:focus {
+        background-color: #f69;
+        color: white;
+      }
+    }
+  }
 }
 
-.form-item.js-form-item.form-type-search.js-form-type-search.form-item-keys.js-form-item-keys.form-no-label.form-group{
-     display: flex !important;
-     justify-content: center;
-     position: absolute;
-     right:1000px;
+#navbar {
+  border: 5px solid #e4f3f8;
+  width: 100%;
+  position: sticky;
+  margin-top: -20px;
+  background-color: #e4f3f8 !important;
+  border-color: transparent;
 }
 
-.button.js-form-submit.form-submit.btn-primary.btn.icon-only {
-    
-    border-top-right-radius: 40px;
-   border-bottom-right-radius: 40px; 
-   background-color: #62B6CB;
-}
+// .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+// background-color: #e4f3f8;
+// display: flex !important;
+// justify-content: center;
+// }
+// .navbar.container {
+//   max-width: 100% !important;
+// }
 
-.logo.navbar-btn.pull-left{
-    position: absolute;
-    right: 1160px;
-    bottom: 20px;
-}
-.notification{
-    background-image: url("https://img.icons8.com/ultraviolet/40/4a90e2/appointment-reminders.png") !important;
-    background-size:contain !important ;
-    background-repeat: no-repeat !important;
-    width: 28px !important;
-    height: 28px !important;
-    position: absolute;
-    left: 1200px;
-    bottom: 10px;
-    margin-top: -40px;
-}
-// .first.last{
-//     color:#62B6CB;
-//     background-color: #f69;
-   
+// .form-item.js-form-item.form-type-search.js-form-type-search.form-item-keys.js-form-item-keys.form-no-label.form-group{
+//  display: flex !important;
+//  justify-content: center;
+//  position: absolute;
+//  right:1000px;
+//  }
+
+// .button.js-form-submit.form-submit.btn-primary.btn.icon-only {
+// border-top-right-radius: 40px;
+// border-bottom-right-radius: 40px;
+// background-color: #FFFFFF;
+// color:#CACCCF;
+// border-color: #FFFFFF;
 // }
 .navbar-default .navbar-nav {
-     li {
-        a{
-            color:white !important;
-            background-color: #f69;
-            border-radius: 30px;
-            right:210px;
-            bottom: 23px;
-        }
-     } 
+  li {
+    a {
+      color: white !important;
+      background-color: #f69;
+      border-radius: 30px;
+      right: 210px;
+      bottom: 23px;
+    }
+  }
 }
-.headroom {
-    position: fixed;
+#navbar {
+  .region.region-navigation-collapsible,
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-right: 0px;
+  }
 }
+.logo {
+  margin-left: 91%;
+  padding-left: 40%;
+}
+.form-control {
+  border-radius: 30px !important;
+  border-radius: 30px !important;
+  border: none #ffffff !important;
+}
+i.better_search {
+  visibility: hidden;
+}
+.button.js-form-submit.form-submit.btn-primary.btn.icon-only {
+  height: 27px;
+  background-color: transparent;
+  border: none;
+  margin-top: 8px;
+}
+.form-search.form-control,
+.input-group-btn {
+  margin-left: 100%;
+}
+#navbar .region.region-navigation-collapsible,
+#navbar .dropdown,
+#navbar .logo {
+  margin-right: -250px;
+}
+#navbar .region.region-navigation-collapsible,
+#navbar .dropdown {
+  padding-bottom: 20px;
+}
+.js-form-type-search input.form-search {
+  background-color: #ffffff;
+}
+
