@@ -1,5 +1,31 @@
-.page-header {
-  margin-top: 40px !important;
+header {
+  display: flex;
+  text-align: center;
+}
+
+#dropdownMenu1 {
+  background: transparent !important;
+  font-size: 16px;
+  color: white !important;
+  border-radius: 50%;
+  border: none !important;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#search-block-form {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 6px !important;
+  right: 280px !important;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
 }
 
 /*# sourceMappingURL=header.css.map */
