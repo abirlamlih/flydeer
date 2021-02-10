@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "a30829645de9863fcddbe39b9c2b084f",
@@ -2773,14 +2773,12 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-
             "funding": [
                 {
                     "url": "https://github.com/weitzman",
                     "type": "github"
                 }
             ],
-
             "time": "2021-02-01T15:34:47+00:00"
         },
         {
@@ -2908,9 +2906,7 @@
             "version": "45",
             "dist": {
                 "type": "file",
-                "url": "https://www.gstatic.com/charts/loader.js",
-                "reference": null,
-                "shasum": null
+                "url": "https://www.gstatic.com/charts/loader.js"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -8683,5 +8679,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.0.8"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
