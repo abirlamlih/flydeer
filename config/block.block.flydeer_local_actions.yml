@@ -1,6 +1,6 @@
 uuid: b89488d7-f27d-4f46-99d2-98a73f0116e6
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - flydeer
@@ -9,7 +9,7 @@ _core:
 id: flydeer_local_actions
 theme: flydeer
 region: content
-weight: -7
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:

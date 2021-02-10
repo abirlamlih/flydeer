@@ -1,6 +1,6 @@
 uuid: a18fa3d6-9880-42a4-ad6f-911de0149947
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - flydeer
@@ -9,7 +9,7 @@ _core:
 id: flydeer_local_tasks
 theme: flydeer
 region: content
-weight: -8
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

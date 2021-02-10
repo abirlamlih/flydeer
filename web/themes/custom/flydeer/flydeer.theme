@@ -6,42 +6,23 @@
  *
  * Place your custom PHP code in this file.
  */
-//  function flydeer_preprocess_menu(&$variables){
-//   # gets current username
-//   $user_logged_in_name = $variables['user']->getDisplayName();
-//   # Capitalize first letter
-//   $variables['user_logged_in_name'] = ucfirst($user_logged_in_name);
-//  }
-// function flydeer_preprocess_menu(&$variables){
-//   $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
 
-//     if (!$user->user_picture->isEmpty()) {
-//       // $displayImg = file_create_url($user->user_picture->entity->getFileUri());
-//       $user['imgUrl'] = file_create_url($user['#options']['entity']->user_picture->entity->getFileUri());
-//     }
-//     else{
-//       $displayImg = '';
-//     }
-// }
-// $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
-// if (!$user->user_picture->isEmpty()) {
-//   $displayImg['user_image_url'] = file_create_url($user->user_picture->entity->getFileUri());
-// } else {
-//   $displayImg = '';
-// }
-function flydeer_preprocess_menu(&$variables){
-  // // gets current user name
-  // $user_logged_in_name = $variables['user']->getDisplayName();
+ function flydeer_preprocess_menu(&$variables){
+     //gets current user name
+    $user_logged_in_name = $variables['user']->getDisplayName();
 
-  // // creates value to ouput in the DOM & capitalize first letter
-  // $variables['user_logged_in_name'] = ucfirst($user_logged_in_name);
+     //creates value to ouput in the DOM & capitalize first letter
+    $variables['user_logged_in_name'] = ucfirst($user_logged_in_name);
 
-  // // gets user email
-  // $user_email = $variables['user']->getEmail();
-  // $variables['user_email'] = $user_email;
+     //gets user email
+    $user_email = $variables['user']->getEmail();
+    $variables['user_email'] = $user_email;
 
-  // get user picture
-  $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
-  $variables['user_picture'] = $user->get('user_picture')->entity->url();
+    //get user picture
+   $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
 
-}
+   if (!empty($user->get('user_picture'))) {
+     //$variables['user_picture'] = $user->get('user_picture')->entity->url();
+   }
+
+ }

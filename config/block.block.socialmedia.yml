@@ -1,6 +1,6 @@
 uuid: cf879bb1-4c06-4256-8114-5477c6ab933b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.socialmedia

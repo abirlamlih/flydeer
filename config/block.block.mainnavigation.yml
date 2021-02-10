@@ -1,0 +1,33 @@
+uuid: 3307ab41-a223-46a5-bbf8-0f58df75ff63
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - node
+    - system
+  theme:
+    - flydeer
+id: mainnavigation
+theme: flydeer
+region: content
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      timesheet: timesheet
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
