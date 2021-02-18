@@ -7,22 +7,61 @@
  * Place your custom PHP code in this file.
  */
 
- function flydeer_preprocess_menu(&$variables){
-     //gets current user name
-    $user_logged_in_name = $variables['user']->getDisplayName();
+function flydeer_preprocess_menu(&$variables)
+{
+  //gets current user name
+  $user_logged_in_name = $variables['user']->getDisplayName();
 
-     //creates value to ouput in the DOM & capitalize first letter
-    $variables['user_logged_in_name'] = ucfirst($user_logged_in_name);
+  //creates value to ouput in the DOM & capitalize first letter
+  $variables['user_logged_in_name'] = ucfirst($user_logged_in_name);
 
-     //gets user email
-    $user_email = $variables['user']->getEmail();
-    $variables['user_email'] = $user_email;
+  //gets user email
+  $user_email = $variables['user']->getEmail();
+  $variables['user_email'] = $user_email;
 
-    //get user picture
-   $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+  //get user picture
+  $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
 
-   if (!empty($user->get('user_picture'))) {
-     //$variables['user_picture'] = $user->get('user_picture')->entity->url();
-   }
+  if (!empty($user->get('user_picture'))) {
+    //$variables['user_picture'] = $user->get('user_picture')->entity->url();
+  }
+}
 
- }
+
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\CloseModalDialogCommand;
+use Drupal\Core\Ajax\RedirectCommand;
+
+/**
+* Implements hook_form_alter().
+*/
+function flydeer_form_node_timesheet_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+$form['actions']['submit']['#submit'][] = '_modal_form_example_ajax_submit';
+$form['actions']['submit']['#attributes']['class'][] = 'use-ajax-submit';
+
+}
+/**
+* Close the Modal and redirect the user to the homepage.
+*
+* @param array $form
+* The form that will be altered.
+* @param \Drupal\Core\Form\FormStateInterface $form_state
+* FormState Object.
+*/
+function _modal_form_example_ajax_submit(array $form, FormStateInterface &$form_state) {
+$response = new AjaxResponse();
+$response->addCommand(new CloseModalDialogCommand());
+$form_state->setResponse($response);
+}
+function _modal_form_example_ajax_callback($form, $form_state) {
+  if ($form_state['my_flag']) {
+    $ret =  '<script>';
+    $ret .= 'jQuery(document).ready(function($) {';
+    $ret .= '  location.reload(true);';
+    $ret .= '});';
+    $ret .= '</script>';
+  }
+  return $form;
+}
