@@ -5,14 +5,15 @@
 }
 .pagination .active a:hover, .pagination .active a:focus {
   background-color: white !important;
-  color: #52575C !important;
+  color: #52575c !important;
 }
 .pagination .active a span:hover, .pagination .active a span:focus {
-  background-color: #62B6CB !important;
-  color: #52575C !important;
+  background-color: #62b6cb !important;
+  color: #52575c !important;
 }
-.pagination li a, .pagination li span {
-  color: #52575C !important;
+.pagination li a,
+.pagination li span {
+  color: #52575c !important;
 }
 
 .text-center {
@@ -21,6 +22,50 @@
 
 .pagination a {
   margin-right: 4px;
+}
+
+#AddButton {
+  background-image: url("https://img.icons8.com/ios-filled/50/4a90e2/plus-2-math.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.use-ajax img {
+  vertical-align: middle;
+  position: relative;
+  float: right;
+  top: -130px;
+}
+
+.entity-meta.tab-content.vertical-tabs-panes,
+.vertical-tab-button.first.active.selected,
+.vertical-tab-button.last {
+  visibility: hidden;
+}
+
+#drupal-modal--dialog {
+  position: fixed;
+  top: 20%;
+  right: 40%;
+}
+
+.button.button--primary.js-form-submit.form-submit.btn-success.btn.icon-before.btn-default {
+  background-color: #5FA8D3;
+  border-color: #5FA8D3;
+  color: #ffffff;
+}
+
+.button.js-form-submit.form-submit.btn-default.btn.icon-before {
+  color: #FF6699;
+  border-color: #FF6699;
+  letter-spacing: 0.2px;
+}
+
+.control-label {
+  width: 100%;
 }
 
 /*# sourceMappingURL=pagination.css.map */
