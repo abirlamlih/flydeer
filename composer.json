@@ -42,7 +42,10 @@
         "drupal/core-composer-scaffold": "^8.8.1",
         "drupal/core-recommended": "^8.8",
         "drupal/date_popup": "^1.1",
+        "drupal/fullcalendar_view": "^2.7",
+        "drupal/gapi": "^1.0@alpha",
         "drupal/link_attributes": "^1.11",
+        "drupal/openid_connect": "^1.0",
         "drupal/paragraphs": "^1.12",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
@@ -143,4 +146,5 @@
             "php": "7.0.8"
         }
     }
+
 }

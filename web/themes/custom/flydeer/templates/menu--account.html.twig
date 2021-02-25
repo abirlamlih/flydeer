@@ -75,9 +75,10 @@
 
 
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-  {# {{ user_logged_in_name|first }} #}
-  {# {% file_create_url() %} #}
-<img class="img-responsive" src={{ user_picture}}>
+     {{ user_logged_in_name }}
+    {# {{ user_email }} #}
+   {# {% file_create_url() %} #}
+  {# <img class="img-responsive" src={{user_picture}}> #}
 
 
   </button>
