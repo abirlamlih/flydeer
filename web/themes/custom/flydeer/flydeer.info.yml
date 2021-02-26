@@ -21,6 +21,13 @@ regions:
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
+libraries-override:
+  fullcalendar_view/fullcalendar:
+    js:
+      js/fullcalendar_view.js: js/fullcalendar_view.js
+
 libraries-extend:
   bootstrap/framework:
     - flydeer/framework
+  fullcalendar_view/fullcalendar:
+    - flydeer/fullcalendar
