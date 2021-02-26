@@ -1,4 +1,10 @@
 <?php
+use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\Ajax\AjaxResponse;
+ use Drupal\Core\Ajax\CloseModalDialogCommand;
+//  use Drupal\Core\Ajax\RedirectCommand;
+
+
 
 /**
  * @file
@@ -6,7 +12,6 @@
  *
  * Place your custom PHP code in this file.
  */
-
 function flydeer_preprocess_menu(&$variables)
 {
   // //gets current user name
@@ -25,14 +30,6 @@ function flydeer_preprocess_menu(&$variables)
     //     $variables['user_picture'] = $user->get('user_picture')->entity->url();
     //  }
 }
-
-
-
- use Drupal\Core\Form\FormStateInterface;
- use Drupal\Core\Ajax\AjaxResponse;
- use Drupal\Core\Ajax\CloseModalDialogCommand;
-use Drupal\Core\Ajax\RedirectCommand;
-
 // /**
 // * Implements hook_form_alter().
 // */
@@ -53,4 +50,9 @@ use Drupal\Core\Ajax\RedirectCommand;
  $response = new AjaxResponse();
  $response->addCommand(new CloseModalDialogCommand());
  $form_state->setResponse($response);
+ }
+ function flydeer_form_node_event_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['actions']['submit']['#submit'][] = '_modal_form_example_ajax_submit';
+  $form['actions']['submit']['#attributes']['class'][] = 'use-ajax-submit';
+
  }
